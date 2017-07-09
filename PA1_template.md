@@ -21,7 +21,7 @@ hist(x=tot_steps,
      main="The distribution of daily steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](PA1_template_files/figure-html/total_steps_taken-1.png)<!-- -->
 
 ```r
 mean(tot_steps, na.rm=TRUE)
@@ -49,7 +49,7 @@ ggplot(data=avgsteps, aes(x=interval, y=steps)) +
     geom_line() + xlab("5-minute interval") + ylab("number of steps taken (average)")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/time_series_plot-1.png)<!-- -->
 
 - Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -98,7 +98,7 @@ hist(x=imp_tot_steps,
      main="The distribution of daily steps (with missing data imputed)")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](PA1_template_files/figure-html/total_steps_taken_with_imputed-1.png)<!-- -->
 
 ```r
 mean(imp_tot_steps)
@@ -134,4 +134,4 @@ ggplot(avg_act_data_imp, aes(interval, steps)) +
     ylab("avarage number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/time_series_with_imputed-1.png)<!-- -->
